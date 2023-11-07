@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/poll', router)
 
-mongoose.connect(process.env.MONGO_URL || "mongodb+srv://tamirzip:tamir0202@tamirwork.oque8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGO_URL || "mongodb+srv://tamirzip:<mongo_password>@tamirwork.oque8.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true})
     .then(()=>{
